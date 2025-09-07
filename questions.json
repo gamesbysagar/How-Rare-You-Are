@@ -1,0 +1,379 @@
+[
+  {
+    "id": 1,
+    "question": "Are you left-handed?",
+    "type": "trait",
+    "regions": {
+      "Africa": 0.05,
+      "Asia": 0.05,
+      "Europe": 0.12,
+      "NorthAmerica": 0.13,
+      "SouthAmerica": 0.06
+    },
+    "globalAverage": 0.10
+  },
+  {
+    "id": 2,
+    "question": "Do you have freckles?",
+    "type": "trait",
+    "regions": {
+      "Africa": 0.02,
+      "Asia": 0.01,
+      "Europe": 0.22,
+      "NorthAmerica": 0.18,
+      "SouthAmerica": 0.10
+    },
+    "globalAverage": 0.12
+  },
+  {
+    "id": 3,
+    "question": "Do you have naturally curly hair?",
+    "type": "trait",
+    "regions": {
+      "Africa": 0.80,
+      "Asia": 0.15,
+      "Europe": 0.28,
+      "NorthAmerica": 0.35,
+      "SouthAmerica": 0.45
+    },
+    "globalAverage": 0.38
+  },
+  {
+    "id": 4,
+    "question": "Do you have dimples?",
+    "type": "trait",
+    "regions": {
+      "Africa": 0.25,
+      "Asia": 0.20,
+      "Europe": 0.22,
+      "NorthAmerica": 0.24,
+      "SouthAmerica": 0.23
+    },
+    "globalAverage": 0.23
+  },
+  {
+    "id": 5,
+    "question": "Do you have green, gray, or blue eyes?",
+    "type": "trait",
+    "regions": {
+      "Africa": 0.01,
+      "Asia": 0.01,
+      "Europe": 0.16,
+      "NorthAmerica": 0.12,
+      "SouthAmerica": 0.05
+    },
+    "globalAverage": 0.09
+  },
+  {
+    "id": 6,
+    "question": "Is your natural hair color something other than black (excluding gray or white)?",
+    "type": "trait",
+    "regions": {
+      "Africa": 0.01,
+      "Asia": 0.05,
+      "Europe": 0.50,
+      "NorthAmerica": 0.30,
+      "SouthAmerica": 0.10
+    },
+    "globalAverage": 0.15
+  },
+  {
+    "id": 7,
+    "question": "Are you lactose intolerant?",
+    "type": "trait",
+    "regions": {
+      "Africa": 0.75,
+      "Asia": 0.90,
+      "Europe": 0.22,
+      "NorthAmerica": 0.35,
+      "SouthAmerica": 0.50
+    },
+    "globalAverage": 0.65
+  },
+  {
+    "id": 8,
+    "question": "Do you have a widow's peak?",
+    "type": "trait",
+    "regions": {
+      "Africa": 0.20,
+      "Asia": 0.25,
+      "Europe": 0.30,
+      "NorthAmerica": 0.30,
+      "SouthAmerica": 0.25
+    },
+    "globalAverage": 0.25
+  },
+  {
+    "id": 9,
+    "question": "Do you have a cleft chin?",
+    "type": "trait",
+    "regions": {
+      "Africa": 0.03,
+      "Asia": 0.02,
+      "Europe": 0.09,
+      "NorthAmerica": 0.08,
+      "SouthAmerica": 0.05
+    },
+    "globalAverage": 0.05
+  },
+  {
+    "id": 10,
+    "question": "Have you ever been hospitalized overnight for any reason?",
+    "type": "experience",
+    "regions": {
+      "Africa": 0.40,
+      "Asia": 0.55,
+      "Europe": 0.32,
+      "NorthAmerica": 0.35,
+      "SouthAmerica": 0.33
+    },
+    "globalAverage": 0.42,
+    "ageSplit": {
+      "Minor": 0.20,
+      "YoungAdult": 0.30,
+      "MiddleAged": 0.50,
+      "Senior": 0.70
+    }
+  },
+  {
+    "id": 11,
+    "question": "Are you double-jointed?",
+    "type": "trait",
+    "regions": {
+      "Africa": 0.20,
+      "Asia": 0.35,
+      "Europe": 0.25,
+      "NorthAmerica": 0.25,
+      "SouthAmerica": 0.30
+    },
+    "globalAverage": 0.30
+  },
+  {
+    "id": 12,
+    "question": "Have you ever seen the Northern Lights?",
+    "type": "experience",
+    "regions": {
+      "Africa": 0.001,
+      "Asia": 0.01,
+      "Europe": 0.14,
+      "NorthAmerica": 0.05,
+      "SouthAmerica": 0.01
+    },
+    "globalAverage": 0.05,
+    "ageSplit": {
+      "Minor": 0.05,
+      "YoungAdult": 0.10,
+      "MiddleAged": 0.20,
+      "Elderly": 0.25
+    }
+  },
+  {
+    "id": 13,
+    "question": "Have you ever gone on a hike?",
+    "type": "experience",
+    "regions": {
+      "Africa": 0.20,
+      "Asia": 0.15,
+      "Europe": 0.33,
+      "NorthAmerica": 0.40,
+      "SouthAmerica": 0.30
+    },
+    "globalAverage": 0.28,
+    "ageSplit": {
+      "Minor": 0.10,
+      "YoungAdult": 0.20,
+      "MiddleAged": 0.35,
+      "Elderly": 0.55
+    }
+  },
+  {
+    "id": 14,
+    "question": "Have you ever broken a bone?",
+    "type": "experience",
+    "regions": {
+      "Africa": 0.12,
+      "Asia": 0.10,
+      "Europe": 0.15,
+      "NorthAmerica": 0.20,
+      "SouthAmerica": 0.18
+    },
+    "globalAverage": 0.15,
+    "ageSplit": {
+      "Minor": 0.18,
+      "YoungAdult": 0.25,
+      "MiddleAged": 0.35,
+      "Elderly": 0.50
+    }
+  },
+  {
+    "id": 15,
+    "question": "Have you ever fainted or passed out?",
+    "type": "experience",
+    "regions": {
+      "Africa": 0.20,
+      "Asia": 0.25,
+      "Europe": 0.33,
+      "NorthAmerica": 0.30,
+      "SouthAmerica": 0.28
+    },
+    "globalAverage": 0.30,
+    "ageSplit": {
+      "Minor": 0.10,
+      "YoungAdult": 0.25,
+      "MiddleAged": 0.35,
+      "Elderly": 0.40
+    }
+  },
+  {
+    "id": 16,
+    "question": "Have you ever had stitches?",
+    "type": "experience",
+    "regions": {
+      "Africa": 0.10,
+      "Asia": 0.08,
+      "Europe": 0.23,
+      "NorthAmerica": 0.30,
+      "SouthAmerica": 0.20
+    },
+    "globalAverage": 0.19,
+    "ageSplit": {
+      "Minor": 0.10,
+      "YoungAdult": 0.20,
+      "MiddleAged": 0.30,
+      "Elderly": 0.45
+    }
+  },
+  {
+    "id": 17,
+    "question": "Have you ever traveled by airplane?",
+    "type": "experience",
+    "regions": {
+      "Africa": 0.30,
+      "Asia": 0.40,
+      "Europe": 0.68,
+      "NorthAmerica": 0.75,
+      "SouthAmerica": 0.50
+    },
+    "globalAverage": 0.55,
+    "ageSplit": {
+      "Minor": 0.20,
+      "YoungAdult": 0.50,
+      "MiddleAged": 0.70,
+      "Elderly": 0.60
+    }
+  },
+  {
+  "id": 18,
+  "question": "Have you ever seen an eclipse?",
+  "type": "experience",
+  "regions": {
+    "Africa": 0.60,
+    "Asia": 0.65,
+    "Europe": 0.70,
+    "NorthAmerica": 0.75,
+    "SouthAmerica": 0.65
+  },
+  "globalAverage": 0.67,
+  "ageSplit": {
+    "Minor": 0.40,
+    "YoungAdult": 0.60,
+    "MiddleAged": 0.75,
+    "Elderly": 0.85
+  }
+},
+  {
+    "id": 19,
+    "question": "Have you ever experienced an earthquake?",
+    "type": "experience",
+    "regions": {
+      "Africa": 0.10,
+      "Asia": 0.30,
+      "Europe": 0.23,
+      "NorthAmerica": 0.25,
+      "SouthAmerica": 0.35
+    },
+    "globalAverage": 0.24,
+    "ageSplit": {
+      "Minor": 0.08,
+      "YoungAdult": 0.20,
+      "MiddleAged": 0.30,
+      "Elderly": 0.35
+    }
+  },
+  {
+    "id": 20,
+    "question": "Have you ever ridden a horse?",
+    "type": "experience",
+    "regions": {
+      "Africa": 0.15,
+      "Asia": 0.20,
+      "Europe": 0.34,
+      "NorthAmerica": 0.40,
+      "SouthAmerica": 0.25
+    },
+    "globalAverage": 0.28,
+    "ageSplit": {
+      "Minor": 0.15,
+      "YoungAdult": 0.25,
+      "MiddleAged": 0.30,
+      "Elderly": 0.25
+    }
+  },
+  {
+    "id": 21,
+    "question": "Have you ever touched natural snow (not ice)?",
+    "type": "experience",
+    "regions": {
+      "Africa": 0.40,
+      "Asia": 0.35,
+      "Europe": 0.58,
+      "NorthAmerica": 0.65,
+      "SouthAmerica": 0.55
+    },
+    "globalAverage": 0.52,
+    "ageSplit": {
+      "Minor": 0.30,
+      "YoungAdult": 0.50,
+      "MiddleAged": 0.60,
+      "Elderly": 0.55
+    }
+  },
+  {
+    "id": 22,
+    "question": "Have you ever slept outdoors overnight?",
+    "type": "experience",
+    "regions": {
+      "Africa": 0.30,
+      "Asia": 0.25,
+      "Europe": 0.43,
+      "NorthAmerica": 0.50,
+      "SouthAmerica": 0.40
+    },
+    "globalAverage": 0.38,
+    "ageSplit": {
+      "Minor": 0.20,
+      "YoungAdult": 0.40,
+      "MiddleAged": 0.45,
+      "Elderly": 0.35
+    }
+  },
+  {
+    "id": 23,
+    "question": "Have you ever performed on stage?",
+    "type": "experience",
+    "regions": {
+      "Africa": 0.10,
+      "Asia": 0.12,
+      "Europe": 0.19,
+      "NorthAmerica": 0.25,
+      "SouthAmerica": 0.15
+    },
+    "globalAverage": 0.17,
+    "ageSplit": {
+      "Minor": 0.08,
+      "YoungAdult": 0.15,
+      "MiddleAged": 0.20,
+      "Elderly": 0.18
+    }
+  }
+]
