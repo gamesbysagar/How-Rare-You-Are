@@ -1,1 +1,92 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/region-and-age.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <title>How Rare You Are</title>
+</head>
+<body>
+  <div id="header">
+    <button class="nav-buttons" id="about">About</button>
+    <button class="nav-buttons" id="donate">Donate</button>
+    <button class="nav-buttons" id="how-it-works">Leaderboard</button>
+  </div>
+  <div id="main-body">
+    <div id="start-card">
+      <div id="head-and-desc">
+        <a href="index.html" id="title-header"><h2>How Rare You Are ? </h2></a>
+        <p id="min-desc">Answer a unique set of questions based on your
+        <b>traits</b> and <b>experiences</b>, Just answer <b>Yes or No</b>. And
+        know how rare you are among your <b>Country</b>, and in the
+        <b>World</b>, also with a <b style="color: #985f00">shareable themed
+        card.<br>🏜️🏞️🌅🌄🌌🌠</b></p>
+        <b><p id="challange-friends-text">Challenge Your Friends! &#x1F60F; </p></b>
+      </div>
+      <button id="start-button">Check Rarity!</button>
+      </div>
+      <div class="region-and-age-selector">
+        <div class="region-selector selector-type-div">
+        <h2 class="selector-header">Select Your Region</h2>
+        <div class="divs-devided devided-div-1">
+        <div class="select-card asia" data-value="asia">Asia</div>
+        <div class="select-card europe" data-value="europe">Europe</div>
+        <div class="select-card africa" data-value="africa">Africa</div>
+        </div>
+        <div class="divs-devided devided-div-2">
+        <div class="select-card north-america" data-value="north-america">North America</div>
+        <div class="select-card south-america" data-value="south-america">South America</div>
+        <div class="select-card oceania" data-value="oceania">Oceania</div>
+        </div>
+        </div>
+        <div class="age-selector selector-type-div">
+        <h2 class="selector-header">Choose Your Age</h2>
+        <div class="divs-devided devided-div-1">
+        <div class="select-card minor" data-value="minor">0-17</div>
+        <div class="select-card young-adult" data-value="young-adult">18-35</div>
+        </div>
+        <div class="divs-devided devided-div-2">
+        <div class="select-card middle-aged" data-value="middle-aged">36-55</div>
+        <div class="select-card senior" data-value="senior">55+</div>
+        </div>
+        </div>
+        </div>
+        <button class="region-and-age-submit">Confirm</button>
+      <div id="question-card">
+        <div class="q-header-div" id="q-count-div">
+          <button id="previous-q">🔙</button>
+          <h5 id="q-count-text">Question</h5>
+          <button id="facts-current-q">🤔</button>
+        </div>
+        <div id="q-div">
+          <p id="question"></p>
+        </div>
+        <div id="yes-no-buttons">
+          <button class="answers" id="yes">Yes</button>
+          <button class="answers" id="no">No</button>
+        </div>
+      </div>
+      <div id="progress-container">
+  <div id="progress-bar"></div>
+  <p id="progress-text">NEXT</p>
+</div>
+      <div id="rarity-page">
+        <div id="rarity-card">
+          <h1 id="rarity-text"></h2>
+          <h2 id="fact"></h4>
+          <h3 id="country-fact"></h3>
+          <h3 id="age-fact"></h5>
+        </div>
+        <button class="rarity-card-buttons" id="share-card-button">Share Your Card! 😍</button>
+        <button class="rarity-card-buttons" id="Special-challange-link">Create Challenge! 😏</button>
+        <button class="rarity-card-buttons" id="deep-analysis">Deep Check! 👀</button>
+      </div>
+    </div>
+  <div id="banner-ad-space">Ad space</div>
+  <script src="js/ui.js"></script>
+</body>
+</html>
