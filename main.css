@@ -1,0 +1,407 @@
+/* Button Reset */
+button {
+  -webkit-tap-highlight-color: transparent;
+  outline: none;
+  border: none;
+  background: inherit;
+}
+button:focus { outline: none; }
+button:active { background: inherit; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Noto Serif", serif;
+  border: 0.05rem dotte black;
+}
+
+/* Root Variables */
+:root {
+  --color-primary: #6C63FF;
+  --color-primary-light: #8E85FF;
+  --color-primary-dark: #4A47CC;
+
+  --color-secondary: #00C9A7;
+  --color-secondary-light: #5CE0D8;
+  --color-secondary-dark: #009E83;
+
+  --color-accent-pink: #FF6B9F;
+  --color-accent-yellow: #FFD166;
+  --color-accent-orange: #FF9E57;
+
+  --color-bg-light: #F9FAFB;
+  --color-bg-medium: #ECEFF1;
+  --color-bg-dark: #2F3136;
+
+  --color-border: rgba(0,0,0,0.1);
+  --shadow-light: 0 0.5rem 1.2rem rgba(0,0,0,0.08);
+  --shadow-medium: 0 0.7rem 1.5rem rgba(0,0,0,0.12);
+
+  --color-text-dark: #2D2E32;
+  --color-text-medium: #555770;
+  --color-text-light: #8C8FA1;
+  --color-text-inverse: #FFFFFF;
+
+  --color-success: #06D6A0;
+  --color-warning: #FFD166;
+  --color-danger: #EF476F;
+
+  font-size: 16px; /* base scaling */
+}
+
+/* Body */
+body {
+  display: flex;
+  flex-direction: column;
+  background: white;
+  min-height: 100vh;
+  color: var(--color-text-dark);
+  align-items: center;
+}
+
+/* Header */
+#header {
+  background: var(--color-bg-medium);
+  backdrop-filter: blur(0.6rem);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 0 5px black;
+  padding: 1rem;
+  width: 100%;
+  height: 8vh;
+  border: 2px solid purple;
+}
+
+.nav-buttons {
+  flex: 1;
+  margin: 0 1vw;
+  background: var(--color-secondary-dark);
+  color: white;
+  text-shadow: 0 0 0.25rem rgba(0, 0, 0, 0.75);
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+  height: 6vh;
+  padding: 0 3vw;
+}
+
+#donate {
+  background: var(--color-accent-pink);
+}
+
+#donate:active {
+  background: linear-gradient(100deg, lightpink, turquoise);
+  transform: scale(0.85);
+}
+
+.nav-buttons:hover {
+  transform: scale(1.05);
+}
+
+.nav-buttons:active {
+  background: linear-gradient(100deg, limegreen, darkgreen);
+  transform: scale(0.85);
+}
+
+/* Main Body */
+#main-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 5vh 5vw;
+  height: 80vh;
+  width: 100%;
+}
+
+/* Start Card */
+#start-card {
+  display: flex;
+  flex-direction: column;
+  background: var(--color-bg-medium);
+  backdrop-filter: blur(0.6rem);
+  border: 2px solid purple;
+  border-radius: 1rem;
+  padding: 2rem;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  box-shadow: 0 0 5px black;
+  justify-content: center;
+}
+
+#title-header {
+  text-decoration: none;
+  color: rgba(64, 0, 0, 1);
+  transition: color 0.3s ease;
+  display: inline-block;
+  animation: pulseAnim 2s infinite ease-in-out;
+  font-size: 1.5rem;
+}
+
+#main-page-link h1:hover {
+  color: var(--color-primary);
+}
+
+#min-desc {
+  color: var(--color-text-medium);
+  margin: 1vh 2vw;
+  font-size: 1rem;
+  line-height: 1.5;
+  text-align: center;
+}
+
+#challange-friends-text {
+  margin: 1vh;
+  color: #985f00;
+  font-size: 1.2rem;
+}
+
+/* Pulse Animation */
+@keyframes pulseAnim {
+  0%   { transform: scale(1); }
+  50%  { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+
+/* Start Button */
+#start-button {
+  height: 10vh;
+  background-image: url('../images/button-bg.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: white;
+  text-align: center;
+  text-shadow: 0 0 5px black;
+  font-size: 1.5rem;
+  font-weight: 1000;
+  padding: 2vh 10vw;
+  border: none;
+  border-radius: 0.75rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  margin-top: auto;
+}
+
+#start-button:active {
+  background-image: url('../images/button-bg.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top left;
+  transform: scale(0.9);
+}
+
+
+
+/* Question Card */
+#question-card {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--color-bg-medium);
+  backdrop-filter: blur(0.6rem);
+  border-radius: 1rem;
+  padding: 2rem;
+  width: 90vw;
+  max-width: 40rem;
+  height: 62vh;
+  box-shadow: 0 0.6rem 1.2rem rgba(0, 0, 0, 0.2);
+  text-align: center;
+  border: 0.05rem solid gray;
+  transition: transform 0.3s ease;
+}
+
+#q-count-div {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.q-header-div button{
+  padding: 0.5rem;
+  background: transparent;
+  font-size: 30px;
+  transform: scale(1);
+  transition: transform 0.3s ease;
+}
+
+.q-header-div button:active {
+  transform: scale(0.85);
+}
+
+#previous-q {
+  margin-right: auto;
+}
+
+#facts-current-q {
+  margin-left: auto;
+}
+
+#q-count-text {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #444;
+}
+
+#question {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #222;
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Yes/No Buttons */
+#yes-no-buttons {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin-bottom: 0.5rem;
+}
+
+.answers {
+  flex: 1;
+  height: 3rem;
+  border-radius: 0.75rem;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
+  border: none;
+  transition: all 0.25s ease-in-out;
+  box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.2);
+  margin: 0 0.3rem;
+}
+
+#yes { background: linear-gradient(135deg, #34d399, #059669); }
+#no  { background: linear-gradient(135deg, #f87171, #dc2626); }
+
+.answers:hover {
+  transform: translateY(-0.5rem);
+  box-shadow: 0 0.4rem 1rem rgba(0, 0, 0, 0.25);
+}
+.answers:active {
+  transform: scale(0.85);
+}
+
+/* Progress */
+#progress-container {
+  margin: 1rem auto 0 auto;
+  width: 85vw;
+  max-width: 20rem;
+  height: 3rem;
+  background: linear-gradient(90deg,var(--color-primary-light), var(--color-primary));
+  border-radius: 0.75rem;
+  box-shadow: inset 0 0 0.75rem var(--color-primary-light);
+  position: relative;
+  overflow: hidden;
+  display: none;
+  transition: transform 0.3s ease;
+}
+
+#progress-bar {
+  width: 0%;
+  height: 100%;
+  background: var(--color-primary-dark);
+  border-radius: 0.75rem;
+  transition: width 0.4s ease;
+}
+
+#progress-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: white;
+  text-shadow: 0 0 0.25rem rgba(0, 0, 0, 0.75);
+}
+
+/* Rarity */
+#rarity-page {
+  height: auto;
+  width: 18rem;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#rarity-card {
+  height: 18rem;
+  width: 18rem;
+  background: var(--color-bg-medium);
+  border: 0.15rem solid lime;
+  border-radius: 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 1rem;
+}
+
+.rarity-card-buttons {
+  height: 3.5rem;
+  width: 100%;
+  background: linear-gradient(90deg,var(--color-primary-light), var(--color-primary));
+  margin-top: 1rem;
+  border-radius: 0.6rem;
+  color: white;
+  font-size: 1.1rem;
+  font-weight: 600;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.rarity-card-buttons:hover {
+  transform: scale(1.05);
+  background: linear-gradient(90deg,var(--color-primary), var(--color-primary-light));
+}
+
+.rarity-card-buttons:active {
+  transform: scale(0.95);
+  background: linear-gradient(90deg,var(--color-primary-light), var(--color-primary));
+}
+
+/* Banner Ad */
+#banner-ad-space {
+  height: 10vh;
+  background-color: gray;
+  width: 100%;
+  text-align:center;
+  justify-text: center;
+}
+
+
+
+/* Tablet & Larger Screens */
+@media (min-width: 768px) {
+  .nav-buttons { font-size: 1.5rem; }
+  #title-header { font-size: 2.5rem; }
+  #min-desc { font-size: 1.5rem; line-height: 1.6; }
+  #start-button { font-size: 2rem; }
+  #challange-friends-text { font-size: 2.5rem; }
+}
+
+/* Tall Devices */
+@media (min-height: 1100px) {
+  .nav-buttons { font-size: 1.5rem; }
+  #title-header { font-size: 3rem; }
+  #min-desc { font-size: 1.8rem; line-height: 2; }
+  #start-button { font-size: 2.2rem; }
+  #challange-friends-text { font-size: 2.8rem; }
+}
